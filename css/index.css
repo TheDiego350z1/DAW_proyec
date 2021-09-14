@@ -1,0 +1,16 @@
+.data_container {
+    margin-top: 50px;
+}
+
+.name {
+    margin-bottom: 10px;
+    height: 50px;
+}
+.pass {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.btn-ingresar {
+    margin-bottom: 50px;
+}

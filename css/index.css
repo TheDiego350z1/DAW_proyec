@@ -1,16 +1,15 @@
-.data_container {
-    margin-top: 50px;
+.img_container {
+    height: 30vh;
 }
 
-.name {
-    margin-bottom: 10px;
-    height: 50px;
-}
-.pass {
-    margin-bottom: 10px;
-    height: 50px;
+.input_container {
+    width: 90%;
 }
 
-.btn-ingresar {
-    margin-bottom: 50px;
+.input_container .input_name {
+    margin-bottom: 15px;
+}
+
+.input_container .input_pin {
+    margin-bottom: 15px;
 }

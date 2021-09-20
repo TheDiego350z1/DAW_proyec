@@ -1,5 +1,13 @@
 .img_container {
+    display: flex;
     height: 30vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.img_container img {
+    height: 100%;
 }
 
 .input_container {
@@ -13,3 +21,6 @@
 .input_container .input_pin {
     margin-bottom: 15px;
 }
+
+/* ----------- Dentro ----------- */
+

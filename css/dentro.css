@@ -1,5 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .header_container {
     height: 50px;
+    width: 100%;
     background-color: red;
 }
 
@@ -8,12 +12,6 @@
     justify-content: center;
     text-align: center;
 }
-
-/* .user_actions {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} */
 
 .user_actions a {
     height: auto;
@@ -30,5 +28,29 @@
     width: 100px;
 }
 
+/* Media */
 
+@media screen and (min-width: 576px) {
+    .user_information {
+        height: 30vh;
+    }
+    .header_container {
+        padding: 0;
+    }
+    .user_information {
+        margin: 25px;
+    }
+    .user_actions {
+        margin-top: 25px;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    .user_information {
+        height: 20vh;
+    }
+    .user_actions a {
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+}

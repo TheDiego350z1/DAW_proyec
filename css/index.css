@@ -1,3 +1,6 @@
+body {
+    background-image: url(../images/body_bg.png);
+}
 .img_container {
     display: flex;
     height: 30vh;

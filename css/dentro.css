@@ -1,36 +1,35 @@
 @import url('./body.css');
 
-.header_container {
-    height: 50px;
+.header_container{
     width: 100%;
-    background-color: #40E0D0;
 }
 
 .user_information {
     display: flex;
+    width: 100%;
     justify-content: center;
     text-align: center;
     color: 	#FFA500;
 }
 
-.user_actions a {
-    height: auto;
-    margin-top: 15px;
+/* .user_actions {
+    width: 100vh;
+} */
+
+
+.user_container_img {
+    text-decoration: none;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
+    margin-bottom: 25px;
 }
 
-.user_actions a:active {
-    transform: scale(.9);
-}
-
-.user_actions a img{
-    height: 100px;
+.user_container_img img {
     width: 100px;
 }
+
+
 
 /* Media */
 
@@ -40,9 +39,6 @@
     }
     .header_container {
         padding: 0;
-    }
-    .user_information {
-        margin: 25px;
     }
     .user_actions {
         margin-top: 25px;

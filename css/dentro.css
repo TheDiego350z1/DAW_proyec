@@ -1,61 +1,45 @@
 @import url('./body.css');
 
-.header_container{
-    width: 100%;
-}
-
 .user_information {
     display: flex;
     width: 100%;
+    height: 30vh;
     justify-content: center;
     text-align: center;
     color: 	#FFA500;
+    margin-top: 25px;
 }
 
-/* .user_actions {
-    width: 100vh;
-} */
-
-
 .user_container_img {
-    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column wrap;
+    align-content: center;    
+    text-decoration: none;
     margin-bottom: 25px;
     width: 100%;
 }
 
-.user_container_img img {
+.user_actions a {
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.user_actions a img {
     width: 100px;
 }
-
-.user_container_img:active {
-    transform: scale(0.90);
-}
-
-
-
 /* Media */
 
 @media screen and (min-width: 576px) {
     .user_information {
         height: 30vh;
     }
-    .header_container {
-        padding: 0;
-    }
-    .user_actions {
-        margin-top: 25px;
+    .user_container_img {
+        display: flex;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .user_information {
         height: 20vh;
-    }
-    .user_actions a {
-        margin: 0 0 0 0;
-        padding: 0;
     }
 }

@@ -3,3 +3,14 @@
 header {
     height: 30vh;
 }
+
+.row {
+    max-width: 700px;
+}
+.container h2 {
+    color: #FFA500;
+}
+
+.input_containe {
+    margin-bottom: 15px
+}

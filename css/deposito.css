@@ -4,6 +4,14 @@ header {
     height: 30vh;
 }
 
+.logo {
+    width: 250px;
+}
+
+.btn {
+    margin-left: 15px;
+}
+
 .row {
     max-width: 700px;
 }

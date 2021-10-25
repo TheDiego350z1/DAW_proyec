@@ -1,0 +1,34 @@
+{
+  "name": "daw_proyec",
+  "version": "1.0.0",
+  "description": "Proyecto Pokémon Bank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheDiego350z1/DAW_proyec.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "spa",
+    "pokémon"
+  ],
+  "author": "Diego García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheDiego350z1/DAW_proyec/issues"
+  },
+  "homepage": "https://github.com/TheDiego350z1/DAW_proyec#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}

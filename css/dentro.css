@@ -23,6 +23,9 @@
     margin-bottom: 15px;
     text-decoration: none;
 }
+.action_container {
+    width: 25%;
+}
 
 .user_actions a img {
     width: 100px;

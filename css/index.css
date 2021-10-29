@@ -8,13 +8,6 @@
     justify-content: center;
 }
 
-.img_container img {
-    height: 100%;
-}
-
-.input_container {
-    width: 90%;
-}
 
 .input_container .input_name {
     margin-bottom: 15px;

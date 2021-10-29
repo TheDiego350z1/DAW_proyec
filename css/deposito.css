@@ -3,22 +3,30 @@
 header {
     height: 30vh;
 }
-
-.logo {
-    width: 250px;
-}
-
-.btn {
-    margin-left: 15px;
-}
-
-.row {
+.container-transacción {
     max-width: 700px;
 }
-.container h1 {
+h2 {
     color: #FFA500;
 }
 
-.input_containe {
-    margin-bottom: 15px
+.buttons_container {
+    margin-top: 15px;
+}
+
+.buttons_container a {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* ERROR */
+.container_error {
+    width: auto;
+}
+.img_container_error {
+    max-width: 300px;
+}
+
+.img_container_error img {
+    width: 100%;
 }

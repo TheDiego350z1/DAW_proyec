@@ -19,14 +19,22 @@
         
     </header>
     <main>
-        <section class="container">
+        <div class="container">
             <div class="row d-flex justify-content-center">
-                <h1 class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 input_containe">Monto a depositar</h1>
-                <input class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 input_containe" type="number">
-                <button title="Depositar" type="button" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 btn btn-warning input_containe">Depositar</button>
-                <button title="Cancelar" type="button" class="col-sm-12 col-md-12 col-lg-12 col-xl-12 btn btn-warning input_containe">Cancelar</button>
+                <div class="container-transacción">
+                    <h2>Pago de servicios</h2>
+                    <input id="retiro" class="form-control form-control-lg" type="number" placeholder="Pago de servicios" aria-label="Pago de servicios">
+                    <div class="buttons_container">
+                        <a href="#/dentro/">
+                            <button title="Cancelar" type="button" class="btn btn-warning">Cancelar</button>
+                        </a>
+                        <a href="">
+                            <button title="Depositar" type="button" class="btn btn-warning">Pagar</button>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>

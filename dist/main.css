@@ -1,8 +1,33 @@
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-image: url(./assets/images/body_bg.png); */
     width: auto;
 }
+
+header {
+    height: 15vh;
+}
+/* INDEX */
+.img_container {
+    display: flex;
+    height: 30vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.input_container {
+    max-width: 500px;
+}
+
+.input_container .input_name {
+    margin-bottom: 15px;
+}
+
+.input_container .input_pin {
+    margin-bottom: 15px;
+}
+
+/*DENTRO*/
 
 .user_information {
     display: flex;
@@ -24,6 +49,7 @@ body {
 }
 
 .user_actions a {
+    color: #FFA500;
     margin-bottom: 15px;
     text-decoration: none;
 }
@@ -34,6 +60,36 @@ body {
 .user_actions a img {
     width: 100px;
 }
+
+/* TRANSACCIONES */
+.container-transacción {
+    max-width: 700px;
+}
+h2 {
+    color: #FFA500;
+}
+
+.buttons_container {
+    margin-top: 15px;
+}
+
+.buttons_container a {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* ERROR */
+.container_error {
+    width: auto;
+}
+.img_container_error {
+    max-width: 300px;
+}
+
+.img_container_error img {
+    width: 100%;
+}
+
 /* Media */
 
 @media screen and (min-width: 576px) {

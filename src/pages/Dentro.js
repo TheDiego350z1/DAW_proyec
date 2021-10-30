@@ -1,3 +1,6 @@
+/**
+ * Pantalla de selección de acciones "Dentro" de pla aplicación
+ */
 const Dentro = () => {
     const view = `
     <div class="container">

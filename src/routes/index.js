@@ -6,8 +6,12 @@ import Retiro from '../pages/Retiro';
 import PagoServicios from '../pages/PagoServicios';
 import Error404 from '../pages/Error404';
 import getHash from '../utils/getHash';
+import validacionCampo from '../utils/validacionCampo';
+import other from '../utils/other';
 
-//Rutas
+/**
+ * Objeto que almacena las rutas 
+ */
 
 const routes = {
     '/': Home,
@@ -17,15 +21,28 @@ const routes = {
     'pagoservicios': PagoServicios,
 };
 
+/**
+ * Objeto que guarda la logíca de la aplicación
+ * como: guardar transacciones, validar campos
+ */
+const options = {
+    '/': other,
+    'dentro': other,
+    'deposito': validacionCampo,
+    'retiro': other,
+    'pagoservicios': other,
+}
 
 const router = async () => {
     const header = null || document.getElementById('Header');
     const contenido = null || document.getElementById('Contenido');
-
     let route = getHash();
     let render = routes[route] ? routes[route] : Error404;
-
+    
     contenido.innerHTML = await render();
+    let opt = routes[route] ? options[route] : ' ';
+
+    opt();
 };
 
 export default router;

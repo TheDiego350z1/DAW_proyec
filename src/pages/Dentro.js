@@ -6,8 +6,8 @@ const Dentro = () => {
     <div class="container">
         <section class="user_information container">
             <div class="row"> 
-                <h1 class="col-12">Diego García</h1>
-                <h2 class="col-12">00222022</h2>
+                <h1 class="col-12" id="userName"></h1>
+                <h2 class="col-12" id="userCount"></h2>
             </div>
         </section>
         <section class="contaier">

@@ -3,6 +3,10 @@ body {
     width: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     height: 15vh;
 }

@@ -1,22 +1,26 @@
 import swal from "sweetalert";
+
+import FormValidator from "validate-js"
 /**
  * Función utilizada para validar los cambos de ingresos
  * para que sean números y no se permita el ingreso de e
  */
 function validacionCampo () {
-    const campo = null || document.getElementById('campo');
+    const campo = document.getElementById('campo');
     const save = null || document.getElementById('save');
-    console.log(campo.value);
-    console.log(save);
+    
+    /**
+     * formatNumber permite dar formato de moneta, utilizando 
+     * Intl.NumbweFormat 
+     */
+    const formatNumber = new Intl.NumberFormat('en-US',{
+        // style: 'currency',
+        // currency: 'USD',
+        minimumFractionDigits: 2
+    });
 
+    
     save.onclick = () => {
-        let e = campo.value;
-        console.log(typeof(e));
-        if (e === '') {
-            swal("Datos erroneos", "intente nuevalmente", "error")
-        } else {
-            console.log('false');
-        }
     }
 }
 

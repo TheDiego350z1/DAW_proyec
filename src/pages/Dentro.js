@@ -24,7 +24,7 @@ const Dentro = () => {
                     <img title="Pago de Servicios" src="assets/images/pago.png" alt="Pago de servicios">
                     Pago de servicios
                 </a>
-                <a class="col-12 col-sm-6 col-md-6 col-lg-12 col-xl-3 d-flex flex-column align-items-center" href="#/reporte/">
+                <a class="col-12 col-sm-6 col-md-6 col-lg-12 col-xl-3 d-flex flex-column align-items-center" href="#/cuenta/">
                     <img title="Estado de Cuenta" src="assets/images/estado_cuenta.png" alt="Estado de cuenta">
                     Estado de cuenta
                 </a>

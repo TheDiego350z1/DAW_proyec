@@ -152,7 +152,7 @@ function saveServices() {
                 campo.value = '';
                 break;
             case '5':
-                nuevoPago = new transaction("Pago de Teléfono ", Number(campo.value), id);
+                nuevoPago = new transaction("Pago de Telefono ", Number(campo.value), id);
                 if (sSaldo >= Number(campo.value)) {
                     swal({
                         title: `${formatNumber.format(campo.value)}`,

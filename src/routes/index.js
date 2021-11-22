@@ -11,6 +11,7 @@ import login from '../utils/login';
 import dataIn from '../utils/dataIn';
 import saveTransaction from '../utils/saveTransaction';
 import saveServices from '../utils/saveServices';
+import Cuetna from '../pages/Cuenta';
 
 /**
  * Objeto que almacena las rutas 
@@ -22,6 +23,7 @@ const routes = {
     'deposito': Deposito,
     'retiro': Retiro,
     'pagoservicios': PagoServicios,
+    'cuenta': Cuetna,
 };
 
 /**
@@ -34,6 +36,7 @@ const options = {
     'deposito': saveTransaction,
     'retiro': saveTransaction,
     'pagoservicios': saveServices,
+    'cuenta': other
 }
 
 /**
@@ -46,7 +49,7 @@ const router = async () => {
     let render = routes[route] ? routes[route] : Error404;
     
     contenido.innerHTML = await render();
-    let opt = routes[route] ? options[route] : Error404;
+    let opt = routes[route] ? options[route] : '';
 
     await opt();
 };

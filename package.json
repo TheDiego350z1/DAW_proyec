@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^9.0.1",
+    "jspdf": "^2.4.0",
     "sweetalert": "^2.1.2",
     "validate-js": "^2.0.1"
   }

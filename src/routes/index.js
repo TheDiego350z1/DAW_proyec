@@ -6,10 +6,11 @@ import Retiro from '../pages/Retiro';
 import PagoServicios from '../pages/PagoServicios';
 import Error404 from '../pages/Error404';
 import getHash from '../utils/getHash';
-import validacionCampo from '../utils/validacionCampo';
 import other from '../utils/other';
 import login from '../utils/login';
 import dataIn from '../utils/dataIn';
+import saveTransaction from '../utils/saveTransaction';
+import saveServices from '../utils/saveServices';
 
 /**
  * Objeto que almacena las rutas 
@@ -30,9 +31,9 @@ const routes = {
 const options = {
     '/': login,
     'dentro': dataIn,
-    'deposito': validacionCampo,
-    'retiro': other,
-    'pagoservicios': other,
+    'deposito': saveTransaction,
+    'retiro': saveTransaction,
+    'pagoservicios': saveServices,
 }
 
 /**
@@ -41,14 +42,13 @@ const options = {
 const router = async () => {
     const header = null || document.getElementById('Header');
     const contenido = null || document.getElementById('Contenido');
-    console.log(location.hash);
     let route = getHash();
     let render = routes[route] ? routes[route] : Error404;
     
     contenido.innerHTML = await render();
-    let opt = routes[route] ? options[route] : ' ';
+    let opt = routes[route] ? options[route] : Error404;
 
-    opt();
+    await opt();
 };
 
 export default router;
